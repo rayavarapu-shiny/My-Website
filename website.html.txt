@@ -1,8 +1,0 @@
-<html>
-<head>
-<title>My Website</title>
-</head>
-<body>
-<marquee>Rayavarapu Shiny </marquee>
-</body>
-</html>
