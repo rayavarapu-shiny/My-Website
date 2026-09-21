@@ -2,104 +2,350 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Rayavarapu Shiny - Resume Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rayavarapu Shiny | IT Developer Portfolio</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
-body{background:#eef4ef url('background.jpg') center/cover fixed;padding:30px}
-.resume{max-width:1100px;margin:auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,.2)}
-.banner{height:160px;background:linear-gradient(90deg,#6abf69,#a5d6a7)}
-.profile{text-align:center;margin-top:-75px}
-.profile img{width:150px;height:150px;border-radius:50%;border:6px solid #fff;object-fit:cover}
-.profile h1{margin-top:10px;color:#2e7d32}
-.profile h3{color:#666;font-weight:500}
-.layout{display:grid;grid-template-columns:320px 1fr}
-.sidebar{background:#2e7d32;color:#fff;padding:25px}
-.sidebar h2,.content h2{margin:18px 0 10px}
-.sidebar ul{padding-left:18px}
-.sidebar li{margin:8px 0}
-.skill{margin:12px 0}
-.bar{height:8px;background:#ffffff55;border-radius:10px}
-.fill{height:8px;background:#fff;border-radius:10px}
-.content{padding:30px}
-.card{background:#f8fbf8;border-left:5px solid #66bb6a;padding:16px;border-radius:8px;margin-bottom:20px}
-table{width:100%;border-collapse:collapse}
-th{background:#66bb6a;color:#fff}
-th,td{border:1px solid #ddd;padding:10px}
-.footer{text-align:center;background:#2e7d32;color:#fff;padding:14px}
-a{color:#fff}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e8f5e9,#f5f7fa);
+    padding:30px;
+    color:#333;
+}
+
+.resume{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.banner{
+    height:170px;
+    background:linear-gradient(135deg,#1b5e20,#66bb6a,#a5d6a7);
+}
+
+.profile{
+    text-align:center;
+    margin-top:-80px;
+    padding-bottom:25px;
+}
+
+.profile img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:6px solid white;
+    object-fit:cover;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.profile h1{
+    margin-top:12px;
+    color:#1b5e20;
+    font-size:32px;
+}
+
+.profile h3{
+    color:#666;
+    font-weight:500;
+}
+
+.layout{
+    display:grid;
+    grid-template-columns:320px 1fr;
+}
+
+.sidebar{
+    background:#1b5e20;
+    color:white;
+    padding:30px;
+}
+
+.sidebar h2,
+.content h2{
+    margin-bottom:12px;
+}
+
+.sidebar h2{
+    margin-top:20px;
+}
+
+.sidebar p{
+    margin:12px 0;
+    line-height:1.5;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+}
+
+.sidebar a:hover{
+    text-decoration:underline;
+}
+
+.sidebar ul{
+    padding-left:20px;
+}
+
+.sidebar li{
+    margin:8px 0;
+}
+
+.skill{
+    margin:14px 0;
+}
+
+.bar{
+    height:8px;
+    background:#ffffff44;
+    border-radius:10px;
+    margin-top:5px;
+}
+
+.fill{
+    height:8px;
+    background:white;
+    border-radius:10px;
+}
+
+.content{
+    padding:30px;
+}
+
+.card{
+    background:#f8fbf8;
+    border-left:5px solid #66bb6a;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#1b5e20;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    margin:10px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#66bb6a;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:left;
+}
+
+.project{
+    background:white;
+    padding:15px;
+    margin:12px 0;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.project h3{
+    color:#2e7d32;
+    margin-bottom:5px;
+}
+
+.buttons{
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2e7d32;
+    color:white;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.btn:hover{
+    background:#1b5e20;
+}
+
+.footer{
+    text-align:center;
+    background:#1b5e20;
+    color:white;
+    padding:16px;
+}
+
+@media(max-width:800px){
+
+    body{
+        padding:10px;
+    }
+
+    .layout{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        padding:25px;
+    }
+
+    .content{
+        padding:20px;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+    .profile h1{
+        font-size:26px;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <div class="resume">
+
 <div class="banner"></div>
+
 <div class="profile">
-<img src="shiny.png" alt="Profile">
+
+<img src="shiny.png" alt="Rayavarapu Shiny">
+
 <h1>Rayavarapu Shiny</h1>
+
 <h3>B.Tech - Information Technology</h3>
+
+<div class="buttons">
+<a class="btn"
+href="https://github.com/rayavarapu-shiny"
+target="_blank">
+GitHub
+</a>
+
+<a class="btn"
+href="mailto:shiny.rayavarapu@gmail.com">
+Contact Me
+</a>
+</div>
+
 </div>
 
 <div class="layout">
-<div class="sidebar">
-<h2>Contact</h2>
-<p>📧 shiny.rayavarapu@gmail.com</p>
-<p>📱 +91 8688890073</p>
-<p>📍 Andhra Pradesh, India</p>
-<p>🌐 github.com/rayavarapu-shiny</p>
 
-<h2>Skills</h2>
-<div class="skill">Java<div class="bar"><div class="fill" style="width:90%"></div></div></div>
-<div class="skill">Python<div class="bar"><div class="fill" style="width:85%"></div></div></div>
-<div class="skill">HTML/CSS<div class="bar"><div class="fill" style="width:95%"></div></div></div>
-<div class="skill">JavaScript<div class="bar"><div class="fill" style="width:80%"></div></div></div>
-<div class="skill">React<div class="bar"><div class="fill" style="width:75%"></div></div></div>
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>Contact</h2>
+
+<p>📧 
+<a href="mailto:shiny.rayavarapu@gmail.com">
+shiny.rayavarapu@gmail.com
+</a>
+</p>
+
+<p>📱 +91 8688890073</p>
+
+<p>📍 Andhra Pradesh, India</p>
+
+<p>🌐
+<a href="https://github.com/rayavarapu-shiny"
+target="_blank">
+github.com/rayavarapu-shiny
+</a>
+</p>
+
+<h2>Technical Skills</h2>
+
+<div class="skill">
+Java
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+Python
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+HTML / CSS
+<div class="bar">
+<div class="fill" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar">
+<div class="fill" style="width:75%"></div>
+</div>
+</div>
+
+<div class="skill">
+React
+<div class="bar">
+<div class="fill" style="width:70%"></div>
+</div>
+</div>
+
+<div class="skill">
+MySQL
+<div class="bar">
+<div class="fill" style="width:80%"></div>
+</div>
+</div>
 
 <h2>Languages</h2>
-<ul><li>English</li><li>Telugu</li></ul>
 
-<h2>Hobbies</h2>
-<ul><li>Coding</li><li>Music</li><li>Painting</li><li>Learning New Technologies</li></ul>
-</div>
-
-<div class="content">
-<div class="card">
-<h2>Career Objective</h2>
-<p>Passionate Information Technology student seeking an opportunity to apply my programming and problem-solving skills while learning new technologies and contributing to innovative software solutions.</p>
-</div>
-
-<div class="card">
-<h2>Education</h2>
-<table>
-<tr><th>Qualification</th><th>Institution</th></tr>
-<tr><td>B.Tech (IT)</td><td>Sheshadri Rao Gudlavalleru Engineering College</td></tr>
-<tr><td>Intermediate (MPC)</td><td>APSWRS Junior College Girls, Moturu</td></tr>
-<tr><td>SSC</td><td>K.V.S.M.Z.P.H. Zamigolvepalli</td></tr>
-</table>
-</div>
-
-<div class="card">
-<h2>Projects</h2>
 <ul>
-<li>HDI Predictor</li>
-<li>StyleFit – AI Virtual Trial Room</li>
-<li>Personal Portfolio Website</li>
+<li>English</li>
+<li>Telugu</li>
 </ul>
-</div>
 
-<div class="card">
-<h2>Strengths</h2>
+<h2>Interests</h2>
+
 <ul>
-<li>Quick Learner</li>
-<li>Hard Working</li>
-<li>Positive Attitude</li>
-<li>Problem Solving</li>
-<li>Team Player</li>
+<li>Coding</li>
+<li>Music</li>
+<li>Painting</li>
+<li>Learning New Technologies</li>
 </ul>
-</div>
-</div>
+
 </div>
 
-<div class="footer">© 2026 Rayavarapu Shiny | Portfolio Resume</div>
-</div>
-</body>
-</html>
+
+<!--
